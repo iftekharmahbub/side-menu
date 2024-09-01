@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Menu & nav-bar</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+ 
+    <section id="banner">
+
+    <nav id="nav-bar">
+        <div class="container">
+            <div class="row">
+                <span class="switch"><i class="fa-regular fa-user"></i></span>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                    <li class="search-icon"><a href="#"><span><i class="fa-solid fa-magnifying-glass"></i></span></a></li>
+                    <li class="log-icon"><a href="#"><span><i class="fa-solid fa-arrow-right-to-bracket"></i></span></a></li>
+                    <button class="theme" >
+                        <span class="dark_mode" ><i class="fa-solid fa-moon"></i></span>
+                        <span class="light_mode" ><i class="fa-solid fa-sun"></i></span>
+                    </button>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div class="search">
+        <span class="switch_off">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+
+        <div class="input_box">
+            <div class="form-group shadow">
+                <div class="icon">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+               <div class="form">
+                <input class="form-control" type="search" placeholder="What are you looking for? ">
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="log_in">
+        <span class="log__close">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="log-box shadow">
+            <h5>Log in</h5>
+            <div class="login__group">
+                <div>
+                   <label for="email" class="login__label form-label">Email</label>
+                   <input type="email" placeholder="Write your email" id="email" class="login__input form-control">
+                </div>
+                
+                <div class="input_pass">
+                   <label for="password" class="login__label form-label">Password</label>
+                   <input type="password" placeholder="Enter your password" id="password" class="login__input pass_form form-control">
+
+                   <button>
+                    <span class="show_pass"><i class="fa-regular fa-eye"></i></span>
+                    <span class="hide_pass" ><i class="fa-regular fa-eye-slash"></i></i></span>
+                   </button>
+                </div>
+
+                <div>
+                    <p class="login__signup">
+                       You do not have an account? <a href="#">Sign up</a>
+                    </p>
+        
+                    <a href="#" class="login__forgot">
+                       Forgotten password?
+                    </a>
+        
+                    <button type="submit" class=" btn login__button">Log In</button>
+                 </div>
+             </div>
+        </div>
+    </div>
+
+
+    <aside class="menu">
+        <div class="sidebar">
+            <div class="acc">
+                <span class="user"><i class="fa-solid fa-user"></i></span>
+                <h4>Iftekhar Mahbub</h4>
+            </div>
+           
+            <div class="option">
+                <span class="logo"><i class="fa-solid fa-house"></i></span>
+                <a href="#">Home</a>
+            </div>
+
+            <div class="option">
+                <span class="logo"><i class="fa-regular fa-id-badge"></i></span>
+                <a href="#">Profile</a>
+            </div>
+
+            <div class="option">
+                <span class="logo"><i class="fa-solid fa-wallet"></i></span>
+                <a href="#">Wallet</a>
+            </div>
+
+            <div class="option">
+                <span class="logo"><i class="fa-solid fa-chart-line"></i></span>
+                <a href="#">Analytics</a>
+            </div>
+
+            <div class="option">
+                <span class="logo"><i class="fa-solid fa-list-check"></i></span>
+                <a href="#">Task</a>
+            </div>
+
+            <div class="option">
+                <span class="logo"><i class="fa-solid fa-gear"></i></span>
+                <a href="#">Settings</a>
+            </div>
+
+            <div class="option last_o">
+                <span class="logo"><i class="fa-solid fa-circle-info"></i></span>
+                <a href="#">Help</a>
+            </div>
+            
+            <div class="dark">
+               <div class="noting">
+                
+               </div>
+                
+            </div>
+
+
+
+            <div class="sign_up">
+                <span class="logo"><i class="fa-solid fa-user-plus"></i></span>
+                <a href="#">Create an Account</a>
+            </div>
+
+        </div>
+
+        <span class="close"><i class="fa-solid fa-xmark"></i></span>
+
+    </aside>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="./app.js"></script>
+</body>
+</html>
